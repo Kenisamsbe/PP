@@ -1,0 +1,46 @@
+#sack1 {
+    width: 90px;
+    height: 90px;
+    background: #ffcfaf;
+}
+
+#sack2 {
+    width: 90px;
+    height: 90px;
+    background: #ffcfaf;
+}
+
+#shaft {
+    width: 260px;
+    height: 75px;
+    background: #ffcfaf;
+    position: absolute; top: 130px; left: 7px;
+}
+
+#shaft #rondy {
+    width: 75px;
+    height: 75px;
+    background: #f7b78c;
+    position: relative; top: 0px; left: 195px;
+}
+
+#shaft #rondy #slit {
+    width: 20px;
+    height: 4px;
+    background: #f28841;
+    position: absolute; top: 32px; left: 55px; 
+}
+
+@keyframes float {
+    0% {
+        transform: translateX(0)
+    }
+    100% {
+        transform: translateX(48px);
+    }
+}
+
+#shaft {
+    animation: float 1000ms infinite alternate-reverse
+    
+}
